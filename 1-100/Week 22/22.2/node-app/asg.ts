@@ -3,9 +3,9 @@
 import AWS from 'aws-sdk';
 
 AWS.config.update({
-  region: 'ap-south-1',
-  accessKeyId: 'YOUR_ACCESS_KEY',
-  secretAccessKey: 'YOUR_ACCESS_SECRET'
+  region: process.env.AWS_REGION || 'ap-south-1',
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID || 'YOUR_ACCESS_KEY',
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY || 'YOUR_ACCESS_SECRET'
 });
 
 // Create an Auto Scaling client

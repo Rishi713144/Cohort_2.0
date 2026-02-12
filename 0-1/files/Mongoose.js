@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.use(express.json());
-mongoose.connect("mongodb+srv:user_new")
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/test")
 
 
 

@@ -1,0 +1,67 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+bower_components/
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Environment variables - CRITICAL for secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs
+*.log
+npm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+.DS_Store
+
+# Build outputs
+dist/
+build/
+coverage/
+out/
+.next/
+.nuxt/
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Secrets and Keys
+*.pem
+*.key
+*.pub
+*.jks
+*.p12
+*.pfx
+*.cert
+*.crt
+# Secret configurations
+auth.json
+credentials.json
+client_secret*.json
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
